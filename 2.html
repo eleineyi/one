@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景原点</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <style>
+       /* div{
+            width: 300px;
+            height:160px;
+            padding: 20px;
+            border: 20px dashed red;
+            margin: 20px;
+            background: url("images/QQ图片20161018093342.jpg") no-repeat;
+
+        }
+        div:nth-child(2){
+            background-origin: padding-box;
+            background-clip: padding-box;
+        }
+        div:nth-child(3){
+            background-origin: content-box;
+            background-clip: content-box;
+        }
+        div:nth-child(4){
+            background-origin: border-box;
+            background-clip: border-box;
+        }*//*背景原点 切割*/
+        div{
+            width: 300px;
+            height:160px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            background: url("images/QQ图片20161018093342.jpg") no-repeat;
+        }
+        div:nth-child(2){
+            background-size: 200px 140px;
+        }
+       div:nth-child(3){
+           background-size: 25%;
+           background: url("images/QQ图片20161018093342.jpg");
+       }
+       div:nth-child(4){
+           background-size: cover;
+       }
+       div:nth-child(5){
+           background-size:contain;
+       }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
